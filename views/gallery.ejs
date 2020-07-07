@@ -1,0 +1,11 @@
+<div class="row">
+    <%= typeof msg != 'undefined' ? msg:'' %>
+    <div class="col s12">
+        <div class="container">
+        <% photolist.forEach(function(pic){ %>
+        <img src="<%=pic.myimage %>" class="responsive-img" alt="rodger">
+        <p><%= pic.caption %></p>
+        <% }) %>
+        </div>
+    </div>
+</div>
